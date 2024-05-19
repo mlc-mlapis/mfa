@@ -1,4 +1,4 @@
-import { ModuleFederationConfig } from '@nx/webpack';
+import {ModuleFederationConfig} from '@nx/webpack';
 
 const config: ModuleFederationConfig = {
   name: 'dashboard',
@@ -14,7 +14,10 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['login'],
+  /**
+   * remotes: ['login']
+   */
+  remotes: []
 };
 
 export default config;
